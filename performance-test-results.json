@@ -1,0 +1,17 @@
+{
+  "testSuite": "Reports API Performance Test",
+  "timestamp": "2025-06-25T15:02:22.937Z",
+  "results": [
+    {
+      "test": "Report Generation",
+      "duration": 3.4568412500619887,
+      "status": "success",
+      "timestamp": "2025-06-25T15:02:22.937Z"
+    }
+  ],
+  "environment": {
+    "nodeVersion": "v18.20.8",
+    "platform": "darwin",
+    "arch": "arm64"
+  }
+}
