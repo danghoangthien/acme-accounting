@@ -1,0 +1,17 @@
+{
+  "testSuite": "Advanced Reports API Performance Test (Worker Threads)",
+  "timestamp": "2025-06-25T15:02:00.165Z",
+  "results": [
+    {
+      "test": "Advanced Report Generation",
+      "duration": 2.012,
+      "status": "success",
+      "timestamp": "2025-06-25T15:01:58.648Z"
+    }
+  ],
+  "environment": {
+    "nodeVersion": "v18.20.8",
+    "platform": "darwin",
+    "arch": "arm64"
+  }
+}

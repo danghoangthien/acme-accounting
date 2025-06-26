@@ -1,0 +1,73 @@
+{
+  "testSuite": "Tickets API Performance Test (Repository Pattern)",
+  "timestamp": "2025-06-25T14:15:29.241Z",
+  "results": [
+    {
+      "test": "Single Ticket Creation - Management Report Ticket",
+      "status": "failed",
+      "error": "HTTP 500: {\"statusCode\":500,\"message\":\"Internal server error\"}",
+      "timestamp": "2025-06-25T14:15:28.675Z"
+    },
+    {
+      "test": "Single Ticket Creation - Registration Address Change Ticket",
+      "status": "failed",
+      "error": "HTTP 500: {\"statusCode\":500,\"message\":\"Internal server error\"}",
+      "timestamp": "2025-06-25T14:15:28.679Z"
+    },
+    {
+      "test": "Single Ticket Creation - Strike Off Ticket",
+      "status": "failed",
+      "error": "HTTP 500: {\"statusCode\":500,\"message\":\"Internal server error\"}",
+      "timestamp": "2025-06-25T14:15:28.682Z"
+    },
+    {
+      "test": "Batch Ticket Creation",
+      "duration": 0.014004624962806701,
+      "status": "success",
+      "batchSize": 10,
+      "successful": 0,
+      "failed": 10,
+      "avgPerTicket": 1.4004624962806702,
+      "timestamp": "2025-06-25T14:15:28.696Z"
+    },
+    {
+      "test": "Concurrent Operations",
+      "duration": 0.009991542100906373,
+      "status": "success",
+      "totalOperations": 5,
+      "successful": 0,
+      "failed": 5,
+      "timestamp": "2025-06-25T14:15:29.231Z"
+    },
+    {
+      "test": "Repository Pattern - Business Rule: Strike Off Auto-Resolution",
+      "duration": 0.003807958960533142,
+      "status": "error",
+      "error": "HTTP 500: {\"statusCode\":500,\"message\":\"Internal server error\"}",
+      "timestamp": "2025-06-25T14:15:29.235Z"
+    },
+    {
+      "test": "Repository Pattern - Business Rule: Unique Registration Address Change",
+      "duration": 0.005595499992370605,
+      "status": "success",
+      "timestamp": "2025-06-25T14:15:29.241Z"
+    }
+  ],
+  "createdTicketsCount": 0,
+  "environment": {
+    "nodeVersion": "v18.20.8",
+    "platform": "darwin",
+    "arch": "arm64",
+    "cpuCores": 10
+  },
+  "repositoryPattern": {
+    "implementation": "Sequelize with Repository Pattern",
+    "benefits": [
+      "Separation of Concerns",
+      "Database Abstraction",
+      "Testability",
+      "Code Reusability",
+      "Maintainability"
+    ]
+  }
+}
